@@ -3,7 +3,19 @@
 @tailwind utilities;
 
 @layer components {
+    @media (min-width: 720px) {
+        .container {
+            max-width: 1240px;
+        }
+    }
+
     .mobile-scroll::-webkit-scrollbar {
         display: none;
-      }
+    }
+
+    .bottom-tab {
+        border-radius: 7px 7px 0 0;
+        filter: drop-shadow(2px 4px 27px rgba(190, 30, 45, .2));
+    }
+
 }

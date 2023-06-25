@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Danh sách điện thoại</title>
+</head>
+
+<body>
+    <div class="w-screen h-screen">
+        <header class="max-md:h-[65px] bg-red-700 ">
+            <div class="container ">
+                <div class="max-md:grid max-md:grid-cols-8 max-md:gap-0.5 py-3 md:flex md:gap-x-8 md:items-center">
+                    <div class="max-md:col-span-1 h-full flex items-center justify-center p-1 md:w-1/6">
+                        <h1 class="text-white text-2lg font-semibold">Logo</h1>
+                    </div>
+                    <div class="max-md:col-span-5 h-full md:w-2/6 ">
+                        <div class="max-md:w-full max-md:h-full flex items-center bg-white p-1 rounded-md">
+                            <input type="text" class="h-full w-4/5 px-2 outline-none flex items-center">
+                            <span
+                                class="h-full w-1/5 text-red-700 flex items-center rounded-md justify-center font-bold text-2xl"><i
+                                    class="ri-search-line"></i></span>
+                        </div>
+                    </div>
+                    <div class="w-3/6 flex justify-end max-md:hidden gap-4">
+                        <div class="w-1/4 flex items-center justify-end gap-1">
+                            <p class="text-white text-xl"><i class="ri-shopping-cart-line"></i></p>
+                            <p class="text-white">Giỏ hàng (1)</p>
+                        </div>
+                        <div class="w-1.5/4 flex flex-row justify-end items-center gap-1">
+                            <p class="text-white text-xl"><i class="ri-user-line"></i>
+                            <p class="text-white">Đăng nhập</p>
+                            <p class="text-white">|</p>
+                            <p class="text-white">Đăng kí </p>
+                        </div>
+                    </div>
+                    <div class="max-md:col-span-1 h-full flex items-center justify-center py-1 md:hidden">
+                        <span class="text-white text-2xl"><i class="ri-shopping-cart-line"></i></span>
+                    </div>
+                    <div class="max-md:col-span-1 h-full flex items-center justify-center py-1 md:hidden">
+                        <span class="text-white text-2xl"><i class="ri-user-line"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main class="border bg-slate-100 min-h-[600px]">
+            <div class="container">
+                <!-- breadcrumb -->
+                <div class="max-md:p-2 bg-slate-100 md:py-2">
+                    <span class="span md:text-md">Trang chủ / </span>
+                    <span class="span text-red-700 md:text-md">Điện thoại</span>
+                </div>
+
+                <!-- brand  -->
+                <div class="flex gap-2 items-center justify-start max-md:px-2 overflow-x-auto mobile-scroll">
+                    <div class="min-w-[120px] flex items-center justify-center">
+                        <img src="images/brand-iphone.webp" alt="" class="w-[120px] h-[40px]  border rounded">
+                    </div>
+                    <div class="min-w-[120px] flex items-center justify-center">
+                        <img src="images/brand-oppo.webp" alt="" class="w-[120px] h-[40px]  border rounded">
+                    </div>
+                    <div class="min-w-[120px] flex items-center justify-center">
+                        <img src="images/brand-xiaomi.webp" alt="" class="w-[120px] h-[40px]  border rounded">
+                    </div>
+                    <div class="min-w-[120px] flex items-center justify-center">
+                        <img src="images/brand-samsung.webp" alt="" class="w-[120px] h-[40px]  border rounded">
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:my-2 md:bg-white md:px-4 md:pb-4 ">
+                    <!-- filter -->
+                    <div class="flex max-md:flex-col md:flex-row md:items-center md:justify-between ">
+                        <h2 class="text-2xl text-red-700 font-bold max-md:p-2 max-md:py-1 md:py-4">Điện thoại</h2>
+                        <div class="flex items-center md:justify-end max-md:px-2 max-md:py-1 md:py-4">
+                            <span class="max-md:text w-1/4">Sắp xếp:</span>
+                            <div
+                                class="md:ml-2 flex justify-start items-center gap-2 max-md:overflow-x-auto max-md:mobile-scroll">
+                                <button
+                                    class="min-w-[100px] py-2 flex items-center justify-center rounded border bg-white"><span
+                                        class="text-gray-500 text-sm">Giảm nhiều</span></button>
+                                <button
+                                    class="min-w-[100px] py-2 flex items-center justify-center rounded border bg-red-700 "><span
+                                        class="text-white text-sm">Trả góp 0%</span></button>
+                                <button
+                                    class="min-w-[100px] py-2 flex items-center justify-center rounded border bg-white"><span
+                                        class="text-gray-500 text-sm">Giá cao - thấp</span></button>
+                                <button
+                                    class="min-w-[100px] py-2 flex items-center justify-center rounded border bg-white"><span
+                                        class="text-gray-500 text-sm">Nổi bật</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- list product -->
+                    <section class="max-md:my-1 max-md:px-2">
+                        <div class="w-full grid max-md:grid-cols-2 max-md:gap-2 md:grid-cols-5 md:gap-4">
+                            <div class="max-md:col-span-1 max-md:h-[300px] max-md:p-2 bg-white rounded-lg md:border">
+                                <div class="max-md:h-auto">
+                                    <img src="images/iphone-13-pro-max-128gb.webp" alt="">
+                                </div>
+                                <div class="py-2 px-2 w-full">
+                                    <a href="product-detail.html">
+                                        <h3 class="text-left text-sm text-ellipsis line-clamp-2"> Iphone 14 chính hãng
+                                        </h3>
+                                    </a>
+                                    <div class="flex flex-col my-2">
+                                        <p class="text-md text-red-700 font-bold"> 60.000.000 đ </p>
+                                        <p class="text-sm line-through text-gray-500"> 70.000.000 đ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="max-md:col-span-1 max-md:h-[300px] max-md:p-2 bg-white rounded-lg md:border">
+                                <div class="max-md:h-auto">
+                                    <img src="images/iphone-13-pro-max-128gb.webp" alt="">
+                                </div>
+                                <div class="py-2 px-2 w-full">
+                                    <a href="product-detail.html">
+                                        <h3 class="text-left text-sm text-ellipsis line-clamp-2"> Iphone 14 chính hãng
+                                        </h3>
+                                    </a>
+                                    <div class="flex flex-col my-2">
+                                        <p class="text-md text-red-700 font-bold"> 60.000.000 đ </p>
+                                        <p class="text-sm line-through text-gray-500"> 70.000.000 đ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="max-md:col-span-1 max-md:h-[300px] max-md:p-2 bg-white rounded-lg md:border">
+                                <div class="max-md:h-auto">
+                                    <img src="images/iphone-13-pro-max-128gb.webp" alt="">
+                                </div>
+                                <div class="py-2 px-2 w-full">
+                                    <a href="product-detail.html">
+                                        <h3 class="text-left text-sm text-ellipsis line-clamp-2"> Iphone 14 chính hãng
+                                        </h3>
+                                    </a>
+                                    <div class="flex flex-col my-2">
+                                        <p class="text-md text-red-700 font-bold"> 60.000.000 đ </p>
+                                        <p class="text-sm line-through text-gray-500"> 70.000.000 đ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="max-md:col-span-1 max-md:h-[300px] max-md:p-2 bg-white rounded-lg md:border">
+                                <div class="max-md:h-auto">
+                                    <img src="images/iphone-13-pro-max-128gb.webp" alt="">
+                                </div>
+                                <div class="py-2 px-2 w-full">
+                                    <a href="product-detail.html">
+                                        <h3 class="text-left text-sm text-ellipsis line-clamp-2"> Iphone 14 chính hãng
+                                        </h3>
+                                    </a>
+                                    <div class="flex flex-col my-2">
+                                        <p class="text-md text-red-700 font-bold"> 60.000.000 đ </p>
+                                        <p class="text-sm line-through text-gray-500"> 70.000.000 đ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="max-md:col-span-1 max-md:h-[300px] max-md:p-2 bg-white rounded-lg md:border">
+                                <div class="max-md:h-auto">
+                                    <img src="images/iphone-13-pro-max-128gb.webp" alt="">
+                                </div>
+                                <div class="py-2 px-2 w-full">
+                                    <a href="product-detail.html">
+                                        <h3 class="text-left text-sm text-ellipsis line-clamp-2"> Iphone 14 chính hãng
+                                        </h3>
+                                    </a>
+                                    <div class="flex flex-col my-2">
+                                        <p class="text-md text-red-700 font-bold"> 60.000.000 đ </p>
+                                        <p class="text-sm line-through text-gray-500"> 70.000.000 đ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="max-md:col-span-1 max-md:h-[300px] max-md:p-2 bg-white rounded-lg md:border">
+                                <div class="max-md:h-auto">
+                                    <img src="images/iphone-13-pro-max-128gb.webp" alt="">
+                                </div>
+                                <div class="py-2 px-2 w-full">
+                                    <a href="product-detail.html">
+                                        <h3 class="text-left text-sm text-ellipsis line-clamp-2"> Iphone 14 chính hãng
+                                        </h3>
+                                    </a>
+                                    <div class="flex flex-col my-2">
+                                        <p class="text-md text-red-700 font-bold"> 60.000.000 đ </p>
+                                        <p class="text-sm line-through text-gray-500"> 70.000.000 đ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="flex items-center justify-center max-md:my-2 my-4">
+                    <button class="bg-white rounded-md p-2 justify-center border-black border shadow-xl">
+                        <span class="text-sm">Xem thêm 10000 sản phẩm</span>
+                    </button>
+                </div>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer class="bg-white">
+            <div class="container">
+                <div class="px-2 w-full md:flex md:py-1 md:justify-center">
+                    <p class="text-sm">&copy; 2023 Demo | WEB BÁN HÀNG - Nguyen Thanh Truong</p>
+                </div>
+            </div>
+        </footer>
+        <div class="h-[52px] md:hidden">
+        </div>
+
+    </div>
+    <div
+        class="bottom-tab w-full h-[52px] fixed bg-white bottom-0 left-0 right-0 md:hidden z-50 grid grid-cols-4 gap-1">
+        <div class="col-span-1  flex flex-col items-center relative text-red-700">
+            <span class="text-2xl"><i class="ri-home-8-line"></i></span>
+            <span class="text-[14px] absolute bottom-1">Trang chủ</i></span>
+        </div>
+        <div class="col-span-1  flex flex-col items-center relative text-red-700">
+            <span class="text-2xl"><i class="ri-grid-fill"></i></span>
+            <span class="text-[14px] absolute bottom-1">Danh mục</i></span>
+        </div>
+        <div class="col-span-1  flex flex-col items-center relative text-red-700">
+            <span class="text-2xl"><i class="ri-newspaper-line"></i></span>
+            <span class="text-[14px] absolute bottom-1">Tin tức</i></span>
+        </div>
+        <div class="col-span-1  flex flex-col items-center relative text-red-700">
+            <span class="text-2xl"><i class="ri-user-6-fill"></i></span>
+            <span class="text-[14px] absolute bottom-1">Tài khoản</i></span>
+        </div>
+
+    </div>
+</body>
+
+</html>
